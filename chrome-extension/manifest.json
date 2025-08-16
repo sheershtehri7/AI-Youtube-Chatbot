@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "AI YouTube Chatbot",
+  "version": "1.0.0",
+  "description": "Transform any YouTube video into an interactive AI conversation",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "http://localhost:8000/*"
+  ],
+  "action": {
+    "default_title": "AI YouTube Chatbot",
+    "default_icon": {
+      "16": "icons/icon16.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png"
+  
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ]
+}

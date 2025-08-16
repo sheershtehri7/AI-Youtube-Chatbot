@@ -1,0 +1,15 @@
+youtube-transcript-api
+langchain-community
+langchain-huggingface
+langchain-core
+faiss-cpu
+tiktoken  # Optional, but kept for compatibility
+python-dotenv
+transformers
+torch  # For local LLM pipeline
+accelerate  # Helps with model loading
+pyyaml  # For config.yaml
+sentence-transformers  # For embedding models
+langchain-google-genai
+fastapi
+uvicorn

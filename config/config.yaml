@@ -1,0 +1,9 @@
+video_id: "dQw4w9WgXcQ"
+chunk_size: 1000
+chunk_overlap: 200
+embeddings_model: "BAAI/bge-small-en-v1.5"
+llm_model: "gemini-1.5-flash"
+temperature: 0.2
+max_tokens: 512
+retriever_k: 4
+api_port: 8000
