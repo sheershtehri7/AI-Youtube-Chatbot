@@ -527,8 +527,8 @@ if (window.aiChatbotInjected) {
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
               </svg>
             </div>
-            <h4 style="margin: 0 0 6px 0; font-size: 14px; font-weight: 600; color: #1e293b;">Start Your Conversation</h4>
-            <p style="margin: 0; font-size: 11px; color: #64748b;">Ask questions about the video content</p>
+            <h4 style="margin: 0 0 6px 0; font-size: 14px; font-weight: 600; color: #1e293b;">Ask questions about the video content</h4>
+            // <p style="margin: 0; font-size: 11px; color: #64748b;">Ask questions about the video content</p>
           </div>
         </div>
 

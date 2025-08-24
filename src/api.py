@@ -122,10 +122,17 @@ async def process_video(request: ProcessRequest):
             "message": f"Processed video {request.video_id}",
             "chunks_created": len(chunks)
         }
-        
-    except Exception as e:
+
+    except Exception as e:  # 👈 same level as try
         logger.error(f"Error processing video {request.video_id}: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Error processing video: {str(e)}")
+        return {
+            "status": "error",
+            "success": False,
+            "video_id": request.video_id,
+            "error": str(e)  # 👈 send the actual error back to frontend
+        }
+
+
 
 @app.options("/ask")
 async def options_ask():
